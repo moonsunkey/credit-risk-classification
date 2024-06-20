@@ -1,28 +1,34 @@
-# Credit-risk-classification
 
+# Summary of Credit-Risk Classification Analysis
 
-## Overview of the Analysis
+This analysis aimed to develop and evaluate a machine learning model to predict the credit risk of loans by classifying them into "healthy" or "high-risk" categories.
 
-In this section, describe the analysis you completed for the machine learning models used in this Challenge. This might include:
+### Key Points:
+- **Purpose**: Predict credit risk using a logistic regression model.
+- **Dataset**: Included loan and financial information (e.g., income, debt).
+- **Target Variable**: `loan_status` with two classes:
+  - **0 (Healthy Loan)**: Low risk of default.
+  - **1 (High-Risk Loan)**: High risk of default.
 
-* Explain the purpose of the analysis.
-* Explain what financial information the data was on, and what you needed to predict.
-* Provide basic information about the variables you were trying to predict (e.g., `value_counts`).
-* Describe the stages of the machine learning process you went through as part of this analysis.
-* Briefly touch on any methods you used (e.g., `LogisticRegression`, or any other algorithms).
+### Methodology:
+1. **Data Preparation**: Split dataset into training and testing subsets.
+2. **Model Training**: Trained a logistic regression model.
+3. **Model Evaluation**: Evaluated using a confusion matrix and classification report.
 
-## Results
+### Results:
+- **Class 0 (Healthy Loan)**:
+  - **Precision**: 1.00
+  - **Recall**: 1.00
+  - **F1-Score**: 1.00
+- **Class 1 (High-Risk Loan)**:
+  - **Precision**: 0.87
+  - **Recall**: 0.95
+  - **F1-Score**: 0.91
+- **Overall Accuracy**: 0.99
 
-Using bulleted lists, describe the accuracy scores and the precision and recall scores of all machine learning models.
+### Recommendations:
+- **Best Performing Model**: Logistic regression with high accuracy and balanced performance.
+- **Use Case**: Suitable for applications needing high recall for high-risk loans and overall reliable predictions.
+- **Additional Models**: Not necessary, as the current model performs exceptionally well.
 
-* Machine Learning Model 1:
-    * Description of Model 1 Accuracy, Precision, and Recall scores.
-
-## Summary
-
-Summarize the results of the machine learning models, and include a recommendation on the model to use, if any. For example:
-
-* Which one seems to perform best? How do you know it performs best?
-* Does performance depend on the problem we are trying to solve? (For example, is it more important to predict the `1`'s, or predict the `0`'s? )
-
-If you do not recommend any of the models, please justify your reasoning.
+This model effectively distinguishes between healthy and high-risk loans, making it highly valuable for credit risk assessment.
